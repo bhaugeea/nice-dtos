@@ -1,0 +1,20 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.breadcrumb-item:not(:nth-of-type(1))::before {
+  content: '/';
+  margin-inline-end: 0.5em;
+}
+
+.tree-parent>ol {
+  transform: scale(120%);
+  transform-origin: top left;
+}
